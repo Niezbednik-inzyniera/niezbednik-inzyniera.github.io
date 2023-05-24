@@ -127,6 +127,45 @@ input{
     opacity: 0.8;
 }
 
+@media only all and (max-width: 550px) {
+    html, body{
+        width: 100%;
+    }
+    header{
+        width: 98%;
+        padding: 10px, 1%, 10px, 1%;    
+    }
+    .heading{
+        width: 100%;
+        font-size: x-large;
+        position: relative; top: 10px;
+    }
+    .search{
+        position: relative; top: -18px;
+        text-align: right;
+        margin: 0, 10px, 0, 10px;
+        padding: 0;
+        width: 20%;
+    }
+    .search:hover{
+        width: 100%;
+    }
+    .search_text{
+        width: 20%;
+        height: 27.33;
+    }
+
+
+    article{
+        width: 98%;
+        padding: 10px, 1%, 10px, 1%;
+    }
+    footer{
+        width: 98%;
+        padding: 1%;
+    }
+}
+
 @media only all and (max-width: 890px) {
     html, body{
         width: 100%;
@@ -178,12 +217,12 @@ input{
     }
     article{
 
-        width: 96.5%;
+        width: 98%;
         padding: 10px, 1%, 10px, 1%;
         margin: 0;
     }
     footer{
-        width: 96.5%;
+        width: 98%;
         padding: 10px, 1%, 10px, 1%;
         margin: 0 0 30px 0;
     }
