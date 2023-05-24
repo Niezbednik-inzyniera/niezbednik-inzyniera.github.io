@@ -1,0 +1,95 @@
+ul.tree {
+	position: absolute; z-index: 2;
+	list-style: none;
+	display: block;
+	margin: 0;
+	padding: 0;
+	text-align: left;
+	text-decoration: none;
+}
+
+li.tree{
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav{
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    opacity: 0.9; /*przezroczystość od 0 do 1*/
+    float: left;
+	font-size: medium;
+    width: 280px;
+    overflow: hidden;
+	position: relative; left: -50px; top: -8px;
+}
+
+#nav nag{
+    display: block;
+    padding: 0 0 20px 7px;
+    margin: 0px;
+    font-weight: bold;
+    font-size: larger;
+}
+
+#nav dl, dl dd{
+    display: block;
+	float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#nav dl {
+	width: 250;
+}
+
+#nav dt{
+	margin: 0;
+	padding: 0;
+    font-size: larger;
+    font-weight: bold;
+}
+
+#nav normal_dt{
+	display: block;
+	padding: 7px 7px 7px 7px;
+}
+
+#nav dt a:link, dt a:visited{
+	padding: 7px 7px 7px 2px;
+	display: block;
+	width: 250px;
+	text-decoration: none;
+	background-color: aliceblue;
+	color: #101010;
+	border-left: 5px solid rgb(227, 227, 227);
+}
+
+#nav dt a:hover {
+	width: 250px;
+	background-color: rgb(227, 227, 227);
+	color: #000000;
+	border-left: 10px solid rgb(210, 210, 210);
+}
+
+#nav dd a:link, dd a:visited {
+	display: block;
+	width: 250px;
+	text-decoration: none;
+	padding: 7px 7px 7px 0;
+	font-weight:400;
+	background-color: aliceblue;
+	color: #101010;
+	border-left: 10px solid rgb(227, 227, 227);
+}
+
+#nav dd a:hover {
+	width: 250px;
+	background-color: rgb(227, 227, 227);
+	color: #000000;
+	border-left: 20px solid rgb(210, 210, 210);
+}
