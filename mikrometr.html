@@ -14,22 +14,23 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+
 <header id="header">
 	<div class="heading">
 		<a href="index.html">Niezbędnik inżyniera</a>
-		<form action="https://www.google.pl/search" method="get" class="search">
-			<input type="text" name="q">
-			<input type="hidden" name="ie" value="utf-8">
-			<input type="hidden" name="sitesearch" value="./"> <!--Tu wpisz adres strony-->
-			<button type="submit" class="button1"><img src="../grafika/ikona wyszukiwania.png" alt="Szukaj" width="20px" height="20px"></button>
-		</form>
 	</div>
+	<form action="https://www.google.pl/search" method="get" class="search">
+		<input type="text" name="q" class="search_text">
+		<input type="hidden" name="ie" value="utf-8">
+		<input type="hidden" name="sitesearch" value="niezbednik-inzyniera.github.io"> <!--Tu wpisz adres strony-->
+		<button type="submit" class="button1"><img src="../grafika/ikona wyszukiwania.png" alt="Szukaj" width="20px" height="20px"></button>
+	</form>
 
-		<br>
-    <ul id="tree0" class="tree">
-        <li><a><img src="../grafika/menu.png" alt="Logo serwisku" width="50px" height="50px" class="logo"></a>
+	<br>
+	<ul id="tree0" class="tree">
+		<li><a><img src="../grafika/menu.png" alt="Logo serwisku" width="50px" height="50px" class="logo"></a>
 
-            <ul id="nav">
+			<ul id="nav">
 				<nav id="nav">
 				<dl>
 					<dt><a href="o_nas.html">O Nas</a></dt><dd></dd>
@@ -61,31 +62,100 @@
 					<dd><a href="odlewanie.html">odlewanie</a></dd>
 					<dd><a href="druk3d.html">druk 3D</a></dd>
 					<dt><a href="programy.html">Programy</a></dt>
+					<dt><a href="zrodla.html">Źródła strony</a></dt>
 					<dt>Prokrastynatorium</dt>
 					<dd><a href="memy.html">memy</a></dd>
 					<dd><a href="kanaly.html">ciekawe linki</a></dd>
 				</dl>
 				</nav>
-            </ul>
-        </li>
-    </ul>
-        
-        <script>
-        new Tree("tree0");
-        </script>
+			</ul>
+		</li>
+	</ul>
+		
+		<script>
+		new Tree("tree0");
+		</script>
 </header>
 
 <article id="article">
+	<br>
 	<div id="nag">Mikrometr</div>
-			W artykule tym chciałbym opowiedzieć o sposobie użytkowania narzędzia pomiarowego jakim jest mikrometr oraz o tym jak wyznaczyć błąd pomiaru przy pomocy niego poczyniony.
-		<div id="nizNag"><p>Użytkowanie</div>
-			Coś tam coś tam
-		<div id="nizNag">Wyznaczanie błędu pomiaru</div>
+	<p id="nowyAkapit">W artykule tym chciałbym opowiedzieć o sposobie użytkowania narzędzia pomiarowego jakim jest mikrometr oraz o tym jak wyznaczyć błąd pomiaru przy pomocy niego poczyniony.</p>
+	<p id="nowyAkapit">Zanim jednak do tego przejdziemy chciałbym trochę opowiedzieć o tym jakie mamy dostępne urządzenia mikrometryczne. Zasadniczo podzielić je możemy na ogólnego przeznaczenia oraz specjalne. Wśród pierwszych wymienić możemy:</p>
+	<ul>
+		<li>mikrometr do pomiarów zewnętrznych,</li>
+		<li>mikrometr do pomiarów zewnętrznych,</li>
+		<li>głębokościomierz mikrometryczny,</li>
+		<li>średnicówka mikrometryczna.</li>
+	</ul>
+	A specjalnych:
+	<ul>
+		<li>mikrometr do gwintów,</li>
+		<li>mikrometr do kół zębatych,</li>
+		<li>mikrometr do rur,</li>
+		<li>mikrometr do drutu,</li>
+		<li>mikrometr do narzędzi skrawających o powierzchniach obrotowych nieciągłych.</li>
+	</ul>
+	<p id="nowyAkapit">Wszystkie one za wzór długośći używają śruby mikrometrycznej czyli dokładnie wykonanej śruby i z tego wzdlędu stosuje się dla nich <u>ten sam wzór wyznaczania niepewności pomiaru</u>.</p>
+	<p id="nowyAkapit">Ogólna budowa mikrometru przedstawiona została na <i>grafice 1</i>.</p>
+	<p style="text-align: center;"><img src="../grafika/mikrometr/budowa mikrometru.png" alt="budowa mikrometru" ></p>
+	<div id="podpisTWG">Grafika 1 przedstawia mikrometr z numerami przypisanymi jego częściom.</div>
+	Gdzie:
+	<ol>
+		<li>kabłąk,</li>
+		<li>kowadełko,</li>
+		<li>wrzeciono,</li>
+		<li>tuleję,</li>
+		<li>bęben</li>
+		<li>sprzęgiełko służy do obracania wrzecionem dzięki czemu docisk do elementu jest stały a śruba nie niszczy się,</li>
+		<li>zacisk służący do blokady obrotu śruby mikrometrycznej w celu utrwalenia wyniku.</li>
+	</ol>
+			
+	<div id="nizNag"><p>Użytkowanie</div>
+		<p id="nowyAkapit">Ta część artykułu pojawi się później.</p>
+	<div id="nizNag">Wyznaczanie błędu pomiaru</div>
 			W celu wyznaczenia błędu pomiaru wykonanego przy pomocy mikrometru należy posłużyć się poniższym wzorem:
-			<p><img src="../grafika/mikrometr/tabela błędów.png" alt="błędy wskazań mikrometru"></p>
+			<p style="text-align: center;"><img src="../grafika/mikrometr/niepewność pomiaru.png" alt="wzór na niepewność mikrometru: \Delta D = \pm \sqrt{f_i^2+ e_{int}^2}" height="30"></p>
+			Gdzie:
+			<ul id="opisWzoru">
+				<li>Δf<sub>i</sub> - błąd wskazania mikrometru, który odczytuje się z <i>tabeli 1</i>.</li>
+				<li>Δe<sub>int</sub> - błąd interpolacji, który występuje przy dzieleniu działki elementarnej na dzesięć części. Wyznacza się go przy pomocy wzoru: <img src="../grafika/mikrometr/wzór na błąd interpolacji.png" height="12px" alt="wzór na błąd interpolacji: e_int=+-0,1*We"></li>
+			</ul >
+			<table align="center">
+				<tr>
+					<th rowspan="2"> Zakres pomiarowy [mm]</th> <th colspan="2">Granice błędów dopuszczalnych [μm]</th>
+				</tr>
+				<tr>
+					<td>(Δf<sub>i</sub>)</td><td>(Δf<sub>A</sub>)</td>
+				</tr>
+				<tr>
+					<td>5÷30</td><td>±5</td><td>±3</td>
+				</tr>
+				<tr>
+					<td>25÷50</td><td>±8</td><td>±6</td>
+				</tr>
+				<tr>
+					<td>50÷75</td><td>±8</td><td>±6</td>
+				</tr>
+				<tr>
+					<td>75÷100</td><td>±8</td><td>±6</td>
+				</tr>
+				<tr>
+					<td>100÷125</td><td>±9</td><td>±7</td>
+				</tr>
+				<tr>
+					<td>125÷150</td><td>±9</td><td>±7</td>
+				</tr>
+			</table>
+			<p id="podpisTWG">Tabela 1 przedstawia wartości błędów wskazań Δf<sub>i</sub>  i błędy wskazań dolnej granicy zakresu pomiarowego Δf<sub>A</sub> dla mikrometrów.</p>
 
 
 
+	<div id="nizNag">Źródła artykułu</div>		
+	<ul>
+		<li>Z. Kiryłowicz, Instrukcja do zajęć laboratoryjnych z przedmiotu: METROLOGIA I SYSTEMY POMIAROWE, 2016, Białystok</li>
+		<li>J. Zawada, Metrologia wielkości geometrycznych, 2011, Łódź</li>
+	</ul>
 </article>
 
 <footer>

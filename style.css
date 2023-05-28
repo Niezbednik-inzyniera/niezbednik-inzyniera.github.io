@@ -107,6 +107,31 @@ article{
     text-align: center;
 }
 
+#nowyAkapit{
+    text-indent: 5%;
+}
+
+#opisWzoru{
+    list-style: none;
+}
+
+#podpisTWG{
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+}
+
+#article table{
+    text-align: center;
+}
+
+#tabela{
+    text-align: center;
+    border-collapse: separate;
+    border: black;
+}
+
+
 footer{
     position: relative; z-index: 1;
     width: 1240px;
@@ -137,7 +162,7 @@ input{
     }
     .heading{
         width: 100%;
-        font-size: x-large;
+        font-size: 200%;
         position: relative; top: 10px;
     }
     .search{
@@ -159,6 +184,7 @@ input{
     article{
         width: 98%;
         padding: 10px, 1%, 10px, 1%;
+        margin: 0;
     }
     footer{
         width: 98%;
@@ -193,8 +219,9 @@ input{
 
 
     article{
-        width: 98%;
+        width: 90%;
         padding: 10px, 1%, 10px, 1%;
+        margin: 0;
     }
     footer{
         width: 98%;
@@ -207,7 +234,7 @@ input{
         width: 100%;
     }
     header{
-        width: 98.4%;
+        width: 98%;
         padding: 10px, 1%, 10px, 1%;
         margin: 30px 0 0 0;
     }
