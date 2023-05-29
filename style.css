@@ -103,11 +103,15 @@ article{
     font-weight: 400;
 }
 
-#article img{
+#img{
     text-align: center;
 }
 
 #nowyAkapit{
+    text-indent: 5%;
+}
+
+nowyAkapit{
     text-indent: 5%;
 }
 

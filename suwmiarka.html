@@ -3,7 +3,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="Niezbędnik inżyniera" content="Strona ta zawiera materiały, które mogą być przydatne dla inżyniera m.in. tablice gwintów informacje na temat pomiarów czy dobieranie zębatek">
-	<title>Niezbędnik inżyniera - mikrometry</title>
+	<title>Niezbędnik inżyniera - suwmiarki</title>
 	<link rel="stylesheet" href="style.css"> <!--style ogólne-->
 	<link rel="stylesheet" href="tree.css"> <!--style dla menu-->
 	<script src="tree.js"></script> <!--skrypt do otwierania menu-->
@@ -79,78 +79,53 @@
 
 <article id="article">
 	<br>
-	<div id="nag">Mikrometry</div>
-	<p id="nowyAkapit">W artykule tym chciałbym opowiedzieć o sposobie użytkowania narzędzia pomiarowego jakim jest mikrometr oraz o tym jak wyznaczyć błąd pomiaru przy pomocy niego poczyniony.</p>
-	<p id="nowyAkapit">Zanim jednak do tego przejdziemy chciałbym trochę opowiedzieć o tym jakie mamy dostępne urządzenia mikrometryczne. Zasadniczo podzielić je możemy na ogólnego przeznaczenia oraz specjalne. Wśród pierwszych wymienić możemy:</p>
-	<ul>
-		<li>mikrometr do pomiarów zewnętrznych,</li>
-		<li>mikrometr do pomiarów zewnętrznych,</li>
-		<li>głębokościomierz mikrometryczny,</li>
-		<li>średnicówka mikrometryczna.</li>
-	</ul>
-	A specjalnych:
-	<ul>
-		<li>mikrometr do gwintów,</li>
-		<li>mikrometr do kół zębatych,</li>
-		<li>mikrometr do rur,</li>
-		<li>mikrometr do drutu,</li>
-		<li>mikrometr do narzędzi skrawających o powierzchniach obrotowych nieciągłych.</li>
-	</ul>
-	<p id="nowyAkapit">Wszystkie one za wzór długośći używają śruby mikrometrycznej czyli dokładnie wykonanej śruby i z tego wzdlędu stosuje się dla nich <u>ten sam wzór wyznaczania niepewności pomiaru</u>.</p>
-	<p id="nowyAkapit">Ogólna budowa mikrometru przedstawiona została na <i>grafice 1</i>.</p>
-	<p style="text-align: center;"><img src="../grafika/mikrometr/budowa mikrometru.png" alt="budowa mikrometru" ></p>
-	<div id="podpisTWG">Grafika 1 przedstawia mikrometr z numerami przypisanymi jego częściom.</div>
-	Gdzie:
-	<ol>
-		<li>kabłąk,</li>
-		<li>kowadełko,</li>
-		<li>wrzeciono,</li>
-		<li>tuleję,</li>
-		<li>bęben</li>
-		<li>sprzęgiełko służy do obracania wrzecionem dzięki czemu docisk do elementu jest stały a śruba nie niszczy się,</li>
-		<li>zacisk służący do blokady obrotu śruby mikrometrycznej w celu utrwalenia wyniku.</li>
-	</ol>
+	<div id="nag">Suwmiarki</div>
+	<p id="nowyAkapit">W artykule tym chciałbym skupić się na narzędziu pomiarowym jakim jest suwmiarka, która to jest narzędziem wykorzystującym kreskowy wzorzec długości co zostanie wyjaśnione po przedstawieniu ogólnej budowy suwmiarki z <i>grafiki 1</i></p>
+    <div id="img"><img src="../grafika/suwmiarka/suwmiarka.jpg" alt="budowa suwmiarki" height="250px"></div>
+    <div id="podpisTWG">Grafika 1 przedstawia budowę suwmiarki.</div>
+    <div id="nowyAkapit">Element oznaczony cyfrą 1 to szczęka nieruchoma do pomiaru wymiarów wewnętrznych a 2 szczęka nieruchoma do 
+    pomiaru wymiarów zewnętrznych. Poprzez cyfrę 3 oznaczony został suwak, na którym znajdują się szczęki ruchome 
+    do wykonywania pomiarów oraz noniusz oznaczony cyfrą 4, który to jest skalą pozwalającą na zwiększenie 
+    dokładności suwmiarki. Poprzez numer 5 oznaczono głębokościomierz.</div>
+
 			
 	<div id="nizNag"><p>Użytkowanie</div>
 		<p id="nowyAkapit">Ta część artykułu pojawi się później.</p>
 	<div id="nizNag">Wyznaczanie błędu pomiaru</div>
-			W celu wyznaczenia błędu pomiaru wykonanego przy pomocy mikrometru należy posłużyć się poniższym wzorem:
-			<p style="text-align: center;"><img src="../grafika/mikrometr/niepewność pomiaru.png" alt="wzór na niepewność mikrometru: \Delta D = \pm \sqrt{f_i^2+ e_{int}^2}" height="30"></p>
-			Gdzie:
-			<ul id="opisWzoru">
-				<li>Δf<sub>i</sub> - błąd wskazania mikrometru, który odczytuje się z <i>tabeli 1</i>.</li>
-				<li>Δe<sub>int</sub> - błąd interpolacji, który występuje przy dzieleniu działki elementarnej na dzesięć części. Wyznacza się go przy pomocy wzoru: <img src="../grafika/mikrometr/wzór na błąd interpolacji.png" height="12px" alt="wzór na błąd interpolacji: e_int=+-0,1*We"></li>
-			</ul >
-			<table align="center">
-				<tr>
-					<th rowspan="2"> Zakres pomiarowy [mm]</th> <th colspan="2">Granice błędów dopuszczalnych [μm]</th>
-				</tr>
-				<tr>
-					<td>(Δf<sub>i</sub>)</td><td>(Δf<sub>A</sub>)</td>
-				</tr>
-				<tr>
-					<td>5÷30</td><td>±5</td><td>±3</td>
-				</tr>
-				<tr>
-					<td>25÷50</td><td>±8</td><td>±6</td>
-				</tr>
-				<tr>
-					<td>50÷75</td><td>±8</td><td>±6</td>
-				</tr>
-				<tr>
-					<td>75÷100</td><td>±8</td><td>±6</td>
-				</tr>
-				<tr>
-					<td>100÷125</td><td>±9</td><td>±7</td>
-				</tr>
-				<tr>
-					<td>125÷150</td><td>±9</td><td>±7</td>
-				</tr>
-			</table>
-			<p id="podpisTWG">Tabela 1 przedstawia wartości błędów wskazań Δf<sub>i</sub>  i błędy wskazań dolnej granicy zakresu pomiarowego Δf<sub>A</sub> dla mikrometrów.</p>
-
-
-
+        <div id="nowyAkapit">Wyznaczenie błędu pomiaru dla suwmiarki sprowadza się do odczytania wartości z <i>tabeli 1</i></div>
+        <table align="center">
+            <tr>
+                <th rowspan="2" colspan="2">Wymiar mierzony [mm]</th><th colspan="3">MPE [μm]</th>
+            </tr>
+            <tr>
+                <th colspan="3">Wartość działki elementarnej noniusza</th>
+            </tr>
+            <tr>
+                <th>ponad</th><th>do</th><th>0,1mm</th><th>0,05mm</th><th>0,02mm</th>
+            </tr>
+            <tr>
+                <td>1</td><td>100</td><td>±100</td><td>±100</td><td>±20</td>
+            </tr>
+            <tr>
+                <td>100</td><td>160</td><td>±100</td><td>±100</td><td>±30</td>
+            </tr>
+            <tr>
+                <td>160</td><td>200</td><td>±130</td><td>±100</td><td>±30</td>
+            </tr>
+            <tr>
+                <td>200</td><td>315</td><td>±140</td><td>±120</td><td>±30</td>
+            </tr>
+            <tr>
+                <td>315</td><td>400</td><td>±160</td><td>±130</td><td>±30</td>
+            </tr>
+            <tr>
+                <td>400</td><td>500</td><td>±180</td><td>±140</td><td>±30</td>
+            </tr>
+        </table>
+        <div id="podpisTWG">Tabela 1 przedstawia wartość błędu granicznego dla suwmiarki uniwersalnej.</div>
+        <div id="nowyAkapit">Sytuacja ma się analogicznie w wypadku głębokościomierza suwmiarkowego, dla któego <i>tabela 2</i> została przedstawiona poniżej.</div>
+        <div id="opisTWG">Tabela 2 przedstawia tabelę błędów granciznych dla głębokościomierza</div>
+        <div id="nowyAkapit">Inaczej trochę sytuacja ma się dla wysokościomierza suwmiarkowego, dla którego trzeba użyć poniższego wzoru.</div>
 	<div id="nizNag">Źródła artykułu</div>		
 	<ul>
 		<li>Z. Kiryłowicz, Instrukcja do zajęć laboratoryjnych z przedmiotu: Metrologia i systemy pomiarowe, 2016, Białystok</li>
