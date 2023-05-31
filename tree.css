@@ -24,7 +24,7 @@ nav{
 	font-size: medium;
     width: 280px;
     overflow: hidden;
-	position: relative; left: -50px; top: -8px;
+	position: relative; left: -50px; top: -4px;
 }
 
 #nav nag{
@@ -44,7 +44,7 @@ nav{
 }
 
 #nav dl {
-	width: 250;
+	width: 250px;
 }
 
 #nav dt{
@@ -92,4 +92,28 @@ nav{
 	background-color: rgb(227, 227, 227);
 	color: #000000;
 	border-left: 20px solid rgb(210, 210, 210);
+}
+
+@media only all and (max-width: 890px) {
+	.tree{
+		opacity: none;
+		width: 100%;
+	}
+	nav{
+		width: 100%;
+		opacity: none;
+	}
+	#nav dl, #nav dl a:hover{
+		width: 100%;
+		opacity: none;
+	}
+	#nav dd, #nav dd a:hover, #nav dd a:link, #nav dd a:visited{
+		width: 100%;
+		opacity: none;
+	}
+	#nav dt{
+		width: 100%;
+		opacity: none;
+	}
+	
 }

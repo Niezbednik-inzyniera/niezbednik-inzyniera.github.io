@@ -24,7 +24,7 @@ header{
     width: 1260px;
     margin: 30px 0 0 0;
     padding: 10px;
-    height: 50px;
+    height: 55px;
 }
 
 #header a{
@@ -55,7 +55,7 @@ header{
 
 
 .search{
-    position: relative; z-index: 2; top: -45px;
+    position: relative; z-index: 3; top: -45px;
     float: right;
     margin: 0 10px 10px 0;
     opacity: 0.9;
@@ -159,13 +159,19 @@ input{
     opacity: 0.8;
 }
 
+@media only all and (max-width:416px){
+    .heading{
+        font-size: 150% !important;
+    }
+}
+
 @media only all and (max-width: 550px) {
     html, body{
         width: 100%;
     }
     header{
-        width: 98%;
-        padding: 10px, 1%, 10px, 1%;    
+        width: auto;
+        padding: 10px, 1%, 10px, 1%;
     }
     .heading{
         width: 100%;
@@ -173,7 +179,7 @@ input{
         position: relative; top: 10px;
     }
     .search{
-        position: relative; top: -18px;
+        position: relative; top: -20px;
         text-align: right;
         margin: 0, 10px, 0, 10px;
         padding: 0;
@@ -186,26 +192,24 @@ input{
         width: 20%;
         height: 27.33;
     }
-
-
     article{
-        width: 98%;
+        width: auto;
         padding: 10px, 1%, 10px, 1%;
         margin: 0;
     }
     footer{
-        width: 98%;
+        width: auto;
         padding: 1%;
     }
 }
 
-@media only all and (max-width: 890px) {
+@media only all and (min-width: 551px) and (max-width: 890px) {
     html, body{
         width: 100%;
     }
     header{
-        width: 98%;
-        padding: 10px, 1%, 10px, 1%;    
+        width: auto;
+        padding: 10px, 1%, 10px, 1%;
     }
     .heading{
         width: 100%;
@@ -226,17 +230,18 @@ input{
 
 
     article{
-        width: 90%;
-        padding: 10px, 1%, 10px, 1%;
+        padding: 20px, 1%, 20px, 1%;
+        width: auto;
         margin: 0;
     }
+
     footer{
-        width: 98%;
+        width: auto;
         padding: 1%;
     }
 }
 
-@media only all and (max-width: 1280px) {
+@media only all and (min-width: 891px) and (max-width: 1280px) {
     html, body{
         width: 100%;
     }
@@ -250,13 +255,12 @@ input{
 
     }
     article{
-
-        width: 98%;
+        width: auto;
         padding: 10px, 1%, 10px, 1%;
         margin: 0;
     }
     footer{
-        width: 98%;
+        width: auto;
         padding: 10px, 1%, 10px, 1%;
         margin: 0 0 30px 0;
     }
