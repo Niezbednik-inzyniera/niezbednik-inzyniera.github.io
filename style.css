@@ -34,7 +34,7 @@ header{
 }
 
 .logo{
-    position: relative; top: -20px;
+    position: relative; top: -22px;
     float: left;
     margin: 0 0 0px 0px;
     opacity: 0.9;
@@ -51,6 +51,7 @@ header{
     font-size: xxx-large;
     float: left;
     width: 1260px;
+    height: 60px;
     font-weight: 900;
 }
 
@@ -160,13 +161,13 @@ input{
     /*opacity: 0.8;*/
 }
 
-@media only all and (max-width:416px){
+@media only all and (max-width:448px){
     .heading{
         font-size: 150% !important;
     }
 }
 
-@media only all and (max-width: 550px) {
+@media only all and (max-width: 640px) {
     html, body{
         width: 100%;
     }
@@ -176,6 +177,7 @@ input{
     }
     .heading{
         width: 100%;
+        height: 35px;
         font-size: 200%;
         position: relative; top: 10px;
     }
@@ -204,7 +206,7 @@ input{
     }
 }
 
-@media only all and (min-width: 551px) and (max-width: 890px) {
+@media only all and (min-width: 641px) and (max-width: 890px) {
     html, body{
         width: 100%;
     }
