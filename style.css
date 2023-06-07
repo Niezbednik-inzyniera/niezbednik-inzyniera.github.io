@@ -19,8 +19,9 @@ body{
 header{
     position: relative; z-index: 3;
     color: black;
-    background-image: url(../grafika/kratka.png);
+    background-image: url("../grafika/kratka.png");
     opacity: 0.9;
+    background-color: #36f;
     width: 1260px;
     margin: 30px 0 0 0;
     padding: 10px;
@@ -36,6 +37,7 @@ header{
     position: relative; top: -20px;
     float: left;
     margin: 0 0 0px 0px;
+    opacity: 0.9;
 
 }
 
@@ -58,7 +60,6 @@ header{
     position: relative; z-index: 3; top: -45px;
     float: right;
     margin: 0 10px 10px 0;
-    opacity: 0.9;
     height: 27.33;
 }
 
@@ -96,7 +97,6 @@ article{
     text-align:center;
     font-weight: bolder;
 }
-
 #nizNag{
     font-size:x-large;
     text-align:center;
@@ -116,6 +116,7 @@ article{
 
 #nowyAkapit{
     text-indent: 5%;
+    text-align: left;
 }
 
 #opisWzoru{
@@ -156,7 +157,7 @@ footer{
 input{
     font-size: medium;
     color: black;
-    opacity: 0.8;
+    /*opacity: 0.8;*/
 }
 
 @media only all and (max-width:416px){
@@ -210,6 +211,7 @@ input{
     header{
         width: auto;
         padding: 10px, 1%, 10px, 1%;
+        opacity: 1;
     }
     .heading{
         width: 100%;
@@ -222,11 +224,13 @@ input{
     }
     .search:hover{
         width: 100%;
+        
     }
     .search_text{
         width: 20%;
         height: 27.33;
     }
+
 
 
     article{
@@ -249,6 +253,7 @@ input{
         width: 98%;
         padding: 10px, 1%, 10px, 1%;
         margin: 30px 0 0 0;
+        opacity: none;
     }
     .heading{
         width: 100%;
