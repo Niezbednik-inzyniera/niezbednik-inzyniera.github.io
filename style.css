@@ -103,7 +103,10 @@ article{
     text-align:center;
     float: center;
     font-weight: bolder;
+    content: '\A';
+    white-space: pre;
 }
+
 #niznizNag{
     font-size:larger;
     text-align:center;
@@ -115,9 +118,22 @@ article{
     text-align: center;
 }
 
+img{
+    content: '\A';
+    white-space: pre;
+    text-align: center;
+}
+
 #nowyAkapit{
     text-indent: 5%;
     text-align: left;
+}
+
+#article nowyAkapit{
+    text-indent: 5%;
+    text-align: left;
+    content: '\A';
+    white-space: pre;
 }
 
 #opisWzoru{

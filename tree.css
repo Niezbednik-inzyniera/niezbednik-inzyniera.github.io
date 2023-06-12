@@ -1,3 +1,7 @@
+.tree{
+	width: 260px;
+}
+
 ul.tree {
 	position: absolute; z-index: 2;
 	list-style: none;
@@ -62,7 +66,7 @@ nav{
 #nav dt a:link, dt a:visited{
 	padding: 7px 7px 7px 2px;
 	display: block;
-	width: 250px;
+	width: 255px;
 	text-decoration: none;
 	background-color: aliceblue;
 	color: #101010;
@@ -96,24 +100,20 @@ nav{
 
 @media only all and (max-width: 890px) {
 	.tree{
-		opacity: none;
-		width: 100%;
+		width: 90%;
 	}
 	nav{
-		width: 100%;
-		opacity: none;
+		width: 118%;
+		opacity: 1;
 	}
 	#nav dl, #nav dl a:hover{
 		width: 100%;
-		opacity: none;
 	}
 	#nav dd, #nav dd a:hover, #nav dd a:link, #nav dd a:visited{
 		width: 100%;
-		opacity: none;
 	}
 	#nav dt{
 		width: 100%;
-		opacity: none;
 	}
 	
 }
