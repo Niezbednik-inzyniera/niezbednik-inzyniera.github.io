@@ -84,18 +84,26 @@
 <article id="article">
 	<br>
 	<div id="nag">Niepewności pomiarów</div>
-	<p id="nowyAkapit">Pomiary podzielić możemy na bezpośrednie i pośrednie. Pomiary bezpośrednie to takie, gdzie wynik pomiar (np.: długość zmierzona suwmiarką) jest od razu ostatecznym wynikiem pomiaru (nie trzeba dokonywać żadnych obliczeń na podstawie znajomości zależności między wartościami). Pomiar pośredni zaś wymaga dokonania obliczeń na podstawie wyniku i dodatkowo zazwyczaj wymaga dokonania kilku pomiarów bezpośrednich (np. pomiar oporu na podstawie napięcia i natężenia).</p> 
+	<p id="nowyAkapit">Pomiary podzielić możemy na bezpośrednie i pośrednie. Pomiary bezpośrednie to takie, gdzie wynik pomiaru (np.: długość zmierzona suwmiarką) jest od razu wynikiem ostatecznym (nie trzeba dokonywać żadnych obliczeń na podstawie znajomości zależności między wartościami). Pomiar pośredni zaś wymaga dokonania obliczeń na podstawie wyniku i dodatkowo zazwyczaj wymaga dokonania kilku pomiarów bezpośrednich (np. pomiar oporu na podstawie napięcia i natężenia).</p> 
 	
 	<p id="nowyAkapit">Każdy pomiar charakteryzuje się niepewnością, którą opisać można jako rozrzut wartości, który można rozsądnie przypisać do wyniku pomiaru i te podzielić możemy na maksymalną (nie wykorzystywaną już dzisiaj), standardową oznaczaną jako <i>u<sub>c</sub>(x)</i> oraz rozszerzoną oznaczaną jako <i>U<sub>c</sub>(x)</i>.</p>
 
 	<div id="nizNag">Niepewność standardowa</div>
 
-	<p id="nowyAkapit">Wyrażona jest w formie odchylenia standardowego obliczyć możemy przy pomocy metody typu A oraz typu B. Ta pierwsza stosowana jest wówczas gdy mamy doczynienia z serią pomiarów i wyznaczamy ją na drodze analizy statystycznej. Jeżeli założymy, że rozkłąd prawdopodobieństwa wyniku (<i>x<sub>i</sub></i>) przyjmuje postać krzywej Gaussa jako wynik pomiarów przyjmujemy średnią arytmetyczną.</p>
+	<p id="nowyAkapit">Wyrażona jest w formie odchylenia standardowego a obliczyć możemy ją przy pomocy metody typu A oraz typu B. Ta pierwsza stosowana jest wówczas gdy mamy doczynienia z serią pomiarów i wyznaczamy ją na drodze analizy statystycznej. Jeżeli założymy, że rozkład prawdopodobieństwa wyniku (<i>x<sub>i</sub></i>) przyjmuje postać krzywej Gaussa jako wynik pomiarów przyjmujemy średnią arytmetyczną.</p>
 	<p style="text-align:center"><img src="../grafika/niepewnosci/srednia.png" alt=" wzór na średnią \bar x=\frac{1}{n}\sum_{i=1}^{n}{x_i}"></p>
-	<p id="nowyAkapit">Zaś niepewność standardowa wyniku oblicza się według poniższego wzoru nazywanego odchyleniem standardowym wielkości średniej.</p>
-	<p style="text-align:center"><img src="../grafika/niepewnosci/niepewność typu A.png" alt="wzór na niepewność standardową typu A \sum^{n}_{i=1}{(x_i-\bar{x})^2} "</p>
-	<!---<<p id="nowyAkapit">Metoda typu B</p>-->
-	<div id="nizNag">Źródła artykułu</div>		
+	<p id="nowyAkapit">Zaś niepewność standardową wyniku oblicza się według poniższego wzoru nazywanego odchyleniem standardowym wielkości średniej.</p>
+	<p style="text-align:center"><img src="../grafika/niepewnosci/niepewnosc typu A.png" alt="wzór na niepewność standardową typu A \sum^{n}_{i=1}{(x_i-\bar{x})^2} "</p>
+	<p id="nowyAkapit">Metoda typu B wykorzystywana jest wówczas gdy dokonujemy pojedynczego pomiaru lub wyniki nie wykazują rozrzutu. Można wyznaczyć ją na podstawie niepewności wzorcowania opisywanej jako <i>Δx</i> lub niepewność graniczna. Określana jest ona przez producenta lub na podstawie wartości działki elementarnej przyrządu pomiarowego (wtedy zwykle przyjmuje wartość pojedynczej działki elementarnej przyrządu).</p>
+	<p style="text-align: center;"><img src="../grafika/niepewnosci/niepewnosc wzorcowania.png" alt="niepewność wzorcowania u(x)=\frac{\Delta x}{\sqrt{3}}"</p>
+	<p id="nowyAkapit">Drugą przyczyną niepewności typu B jest niepewność eksperymentatora <i>Δx<sub>e</sub></i>, która to szacowana jest na podstawie umiejętności eksperymentatora oraz sposobu wykonywania pomiaru. Wyznacza się ją w sposób analogiczny jak niepewność wzorcowania. Jeśli te dwie niepewności występują jednocześnie sumuje się je w sposób przedstawiony niżej.</p>
+	<p style="text-align: center;"><img src="../grafika/niepewnosci/suma niepewnosci typu B.png" alt="suma niepewności typu B u(x)=\sqrt{\frac{(\Delta x)^2}{3}+\frac{(\Delta x_{e})^2}{3}}"></p>
+	<p id="nowyAkapit">Gdy niepewność typu A oraz B występują jednocześnie to dodaje się je według poniższego wzoru, który należy jednak wykorzystywać wówczas gdy obydwie niepewności są tego samego rzędu wielkości.</p>
+	<p style="text-align: center;"><img src="../grafika/niepewnosci/suma niepewnosci.png" alt="suma niepewności typu A i B u(x)=\sqrt{s^2_{\bar{x}}+\frac{(\Delta x)^2}{3}+\frac{(\Delta x_{e})^2}{3}}"</p>
+
+	<!---<p id="nowyAkapit">Wszystkie wskazane wyżej metody dotyczyły pomiarów wykonywanych bezpośrednio.</p>--->
+
+	<div id="nizNag">Źródła artykułu</div>
 	<ul>
 		<li><a href="https://if.pw.edu.pl/~labfiz1p/cmsimple2_4/1instrukcje_pdf/ONP%20-%20poradnik.pdf">A. Kubiaczyk - Określanie niepewności pomiarów, 2019, Warszawa</a></li>
 	</ul>
