@@ -101,7 +101,14 @@
 	<p id="nowyAkapit">Gdy niepewność typu A oraz B występują jednocześnie to dodaje się je według poniższego wzoru, który należy jednak wykorzystywać wówczas gdy obydwie niepewności są tego samego rzędu wielkości.</p>
 	<p style="text-align: center;"><img src="../grafika/niepewnosci/suma niepewnosci.png" alt="suma niepewności typu A i B u(x)=\sqrt{s^2_{\bar{x}}+\frac{(\Delta x)^2}{3}+\frac{(\Delta x_{e})^2}{3}}"</p>
 
-	<!---<p id="nowyAkapit">Wszystkie wskazane wyżej metody dotyczyły pomiarów wykonywanych bezpośrednio.</p>--->
+	<p id="nowyAkapit">Wszystkie wskazane wyżej metody dotyczyły pomiarów wykonywanych bezpośrednio jednak bardzo często jakiegoś wyniku <i>z</i> nie da się odczytać wprost i wówczas mamy doczynienia z pomiarem pośrednim, dla którego liczy się niepewność złożoną obliczaną według następującego wzoru jeśli mamy doczynienia z pomiarami nieskorelowanymi (czyli nie mierzy się ich w jednym pomiarze). Gdy mamy doczynienia z pomiarami skorelowanymi niepewność liczy się w sposób analogcziny jak w wypadku niepewności typu A.</p>
+	<p style="text-align: center;"><img src="../grafika/niepewnosci/niepewnosc zlozona.png" alt="niepewność złożona u(z) = \sqrt{\sum^k_{j=1}{(\frac{\partial f(x_j)}{\partial x_j})^2}u^2(x_j)}"></p>
+
+	<div id="nizNag">Niepewność rozszerzona</div>
+	
+	<p id="nowyAkapit">Niepewność standardowa określa przedział, w któym znajduje się wartość z 68% prawdopodobieństwem dla niepewności typu A i 58% dla niepewności typu B. Aby móc porównywać wyniki uzyskane w różnych laboratoriach i warunkach wporwadzono niepewność rozszerzoną. Pozwala ona na to, aby w ramach przedziału niepewności znalazła się przeważająca część wyników. Wzór na niepewność rozszerzoną przedstawiono poniżej.</p>
+	<p style="text-align: center;"><img src="../grafika/niepewnosci/niepewnosc rozszerzona.png" alt="wzór na niepewność rozszerzoną U(x) = k \cdot u(x)"</p>
+	<p id="nowyAkapit">Współczynnik <i>k</i> we wzorze to współczynnik rozszerzenia, którego ustawienie na wartość 2 powoduje, że prawdopodobieństwo znalezienia się wartości w tym przedziale wynosi 95% a na 3 99% (z taką wartością współczynnika zwykle podaje się niepewność rozszerzoną w literaturze).</p>
 
 	<div id="nizNag">Źródła artykułu</div>
 	<ul>
